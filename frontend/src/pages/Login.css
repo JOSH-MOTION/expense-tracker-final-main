@@ -1,0 +1,170 @@
+/* auth forms */
+form.signup, form.login {
+    width: 35rem;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 4rem;
+    height: 40rem;
+  }
+
+
+
+
+
+.btnlg{
+background-color: #3F2EFF;
+border-radius: 20px;
+border: none;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  margin: 2px;
+}
+.btnsp{
+    background-color: #3F2EFF;
+border-radius: 20px;
+border: none;
+  color: #FFFFFF;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 12px 45px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  transition: transform 80ms ease-in;
+  margin: 2px;
+}
+
+
+button:active {
+    transform: scale(0.95);
+}
+
+button:focus {
+    outline: none;
+}
+
+button.ghost {
+    background-color: transparent;
+      border: 1px solid #FFFFFF;   
+    transition: 0.5s;
+}
+
+button.ghost:hover {
+    background-color: #FFFFFF;
+    color: #0E1119;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #3c3c3c; /* Green */
+    color: #f6cd00;
+    transition-duration: 0.4s;
+  }
+form {
+    background-color: #FFFFFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 50px;
+    height: 100%;
+    text-align: center;
+}
+ .login h3 {
+    font-weight: bolder;
+    font-size: 3em;
+    margin: 0;
+    color: #ebaf0b;;
+}
+.signup h3 {
+    font-weight: bolder;
+    font-size: 3em;
+    margin: 0;
+    color: #3F2EFF;
+   
+}
+input {
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+    border-radius: 3rem;
+}
+
+.name{
+    font-weight: bolder;
+    position: relative;
+    bottom:39rem;
+    left: 7rem;
+    color: #3F2EFF;
+    font-size: larger;
+
+}
+.name1{
+    cursor: pointer;
+}
+
+.loginbtn{
+    border-radius: 20px;
+    border: none;
+      background-color: #3F2EFF;
+      color: #FFFFFF;
+      font-size: 12px;
+      font-weight: bold;
+      padding: 12px 45px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      transition: transform 80ms ease-in;
+   text-decoration: none;
+}
+
+.loginbtn:hover {
+    background-color: #3c3c3c; /* Green */
+    color: #f6cd00;
+    transition-duration: 0.4s;
+  }
+
+  .passbtn{
+      background-color: none;
+  }
+  .eye-button{
+      background-color: none;
+  }
+
+
+
+  .title {
+    position: relative;
+    bottom: 1.7rem;
+    left: 3rem;
+    color: #222260; 
+    font-size: 20px; 
+    font-weight: bold;
+  }
+  .title:hover {
+    position: relative;
+    bottom: 1.7rem;
+    left: 3rem;
+    color: #10b92f;
+    font-size: 20px; 
+    font-weight: bold;
+  }
+
+  .Lgout{
+      margin: none;
+      background-color: #0E1119;
+      height: 100vh;
+      text-align: center;
+      color: #eee;
+      
+  }
+  .Lgout h2{
+    color: #eee;
+    padding-top: 3rem;
+  }
