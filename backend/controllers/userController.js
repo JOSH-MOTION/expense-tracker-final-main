@@ -8,14 +8,14 @@ const createToken = (_id) => {
 
 
 
-const clearUserData = async (userId) => {
-  try {
+// const clearUserData = async (userId) => {
+//   try {
     // Implement your logic to clear user data
     // Example: User.deleteMany({ userId });
-  } catch (error) {
-    throw new Error('Error clearing user data: ' + error.message);
-  }
-};
+//   } catch (error) {
+//     throw new Error('Error clearing user data: ' + error.message);
+//   }
+// };
 
 // login a user
 const loginUser = async (req, res) => {
@@ -47,6 +47,25 @@ const signupUser = async (req, res) => {
   } catch (error) {
     res.status(400).json({error: error.message})
   }
-}
+};
 
-module.exports = { signupUser, loginUser,clearUserData }
+const logoutUser = async (req, res) => {
+  // No need to clear user data on logout if you want each user to have different data entered
+  res.status(200).json({ message: 'User logged out successfully' });
+};
+
+// This function fetches data associated with the authenticated user
+const getUserData = async (req, res) => {
+  try {
+    // Assuming the authenticated user's ID is available in req.user._id
+    const userId = req.user._id;
+
+    // Fetch data from the database associated with the user
+    // Example: const userData = await DashboardDataModel.find({ userId });
+
+    res.status(200).json(userData);
+  } catch (error) {
+    res.status(500).json({ error: 'Failed to fetch user data' });
+  }
+};
+module.exports = { signupUser, loginUser, logoutUser, getUserData };
